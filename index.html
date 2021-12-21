@@ -79,6 +79,11 @@
         display: none;
       }
 
+      .logo{
+        height:64px;
+        width:64px;
+      }
+
       .logotext {
         align-self: center !important;
         color: #fff !important;
@@ -166,6 +171,12 @@
       .section2p {
         color: rgba(0, 0, 0, .6);
         text-align: center;
+      }
+
+      .bottomContainer{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
       }
 
       @media only screen and (max-device-width:800px) {
@@ -265,7 +276,7 @@
       <section class="section1">
         <div class="section1logocontainer">
           <a class="alogocontainer" href="/">
-            <img class="logo" alt="gpu mining rig" src="logo.png" style="height:64px;width:64px;">
+            <img class="logo" alt="gpu mining rig" src="logo.png">
             <h2 class="section2h2 logotext">BayAreaMiner</h2>
           </a>
           
@@ -282,7 +293,7 @@
             <h2 class="section2h2">BayAreaMiner</h2>
             <p class="section2p">BayAreaMiner is a cryptocurrency mining company that specializes in cryptocurrency mining, educational services, and consulting.</p>
             <div>
-              <div style="display: flex;justify-content: center;margin-top: 30px;">
+              <div class="bottomContainer">
                 <a href="mailto:bayareaminer@gmail.com">
                   <button>Get in touch</button>
                 </a>
