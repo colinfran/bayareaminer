@@ -169,6 +169,7 @@ html {
   }
 
   .img-responsive.mobile {
+    width: 55%;
     display: block;
   }
 }
