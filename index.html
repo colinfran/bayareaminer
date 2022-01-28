@@ -15,6 +15,24 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
     <link rel="stylesheet" href="./index.css">
+
+    <script>
+      (function(){
+        // clear cache every time page is updated
+        var lastVersioning = Date.UTC(2014, 11, 20, 2, 15, 10);
+        var lastCacheDateTime = localStorage.getItem('lastCacheDatetime');
+        if(lastCacheDateTime){
+          if(lastVersioning > lastCacheDateTime){
+            var reload = true;
+          }
+        }
+        localStorage.setItem('lastCacheDatetime', Date.now());
+        if(reload){
+          location.reload(true);
+        }
+      })();
+
+    </script>
   </head>
   <body>
     <main class="main">
